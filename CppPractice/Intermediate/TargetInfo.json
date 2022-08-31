@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "CppPractice",
+			"Path": "Z:\\jlawf\\Documents\\GitHub repos\\Unreal-Projects-Backups\\CppPractice\\Source\\CppPractice.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "CppPracticeEditor",
+			"Path": "Z:\\jlawf\\Documents\\GitHub repos\\Unreal-Projects-Backups\\CppPractice\\Source\\CppPracticeEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

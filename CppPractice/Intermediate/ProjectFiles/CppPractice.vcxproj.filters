@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\CppPractice.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\CppPractice.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\CppPracticeEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\CppPractice">
+      <UniqueIdentifier>{6DF15A0A-0DC2-374C-AFA5-D298EDCD2C9B}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\CppPractice\CppPractice.Build.cs">
+      <Filter>Source\CppPractice</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\CppPractice\CppPractice.cpp">
+      <Filter>Source\CppPractice</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CppPractice\CppPractice.h">
+      <Filter>Source\CppPractice</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CppPractice\CppPracticeGameModeBase.cpp">
+      <Filter>Source\CppPractice</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CppPractice\CppPracticeGameModeBase.h">
+      <Filter>Source\CppPractice</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CppPractice\FPSCharacter.cpp">
+      <Filter>Source\CppPractice</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CppPractice\FPSCharacter.h">
+      <Filter>Source\CppPractice</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

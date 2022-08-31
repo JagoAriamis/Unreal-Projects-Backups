@@ -1,0 +1,19 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\cpppractice\\source\\cpppractice\\cpppracticegamemodebase.cpp",
+        "ProvidedModule": "",
+        "PCH": "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\cpppractice\\intermediate\\build\\win64\\cpppracticeeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\cpppractice\\intermediate\\build\\win64\\unrealeditor\\development\\cpppractice\\definitions.cpppractice.h",
+            "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\cpppractice\\source\\cpppractice\\cpppracticegamemodebase.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\serverstatreplicator.generated.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\gamemodebase.generated.h",
+            "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\cpppractice\\intermediate\\build\\win64\\unrealeditor\\inc\\cpppractice\\cpppracticegamemodebase.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

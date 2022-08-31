@@ -1,0 +1,13 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\gamemechanics\\intermediate\\build\\win64\\unrealeditor\\inc\\gamemechanics\\gamemechanics.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\gamemechanics\\intermediate\\build\\win64\\gamemechanicseditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\gamemechanics\\intermediate\\build\\win64\\unrealeditor\\development\\gamemechanics\\definitions.gamemechanics.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

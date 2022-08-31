@@ -1,0 +1,17 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-GameMechanics.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"Z:\jlawf\Documents\GitHub repos\Unreal-Projects-Backups\GameMechanics\Intermediate\Build\Win64\GameMechanicsEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"Z:\jlawf\Documents\GitHub repos\Unreal-Projects-Backups\GameMechanics\Intermediate\Build\Win64\UnrealEditor\Development\GameMechanics\GameMechanics.cpp.obj"
+"Z:\jlawf\Documents\GitHub repos\Unreal-Projects-Backups\GameMechanics\Intermediate\Build\Win64\UnrealEditor\Development\GameMechanics\GameMechanicsCharacter.cpp.obj"
+"Z:\jlawf\Documents\GitHub repos\Unreal-Projects-Backups\GameMechanics\Intermediate\Build\Win64\UnrealEditor\Development\GameMechanics\GameMechanicsGameMode.cpp.obj"
+"Z:\jlawf\Documents\GitHub repos\Unreal-Projects-Backups\GameMechanics\Intermediate\Build\Win64\UnrealEditor\Development\GameMechanics\GameMechanics.init.gen.cpp.obj"
+"Z:\jlawf\Documents\GitHub repos\Unreal-Projects-Backups\GameMechanics\Intermediate\Build\Win64\UnrealEditor\Development\GameMechanics\GameMechanicsCharacter.gen.cpp.obj"
+"Z:\jlawf\Documents\GitHub repos\Unreal-Projects-Backups\GameMechanics\Intermediate\Build\Win64\UnrealEditor\Development\GameMechanics\GameMechanicsGameMode.gen.cpp.obj"
+"Z:\jlawf\Documents\GitHub repos\Unreal-Projects-Backups\GameMechanics\Intermediate\Build\Win64\UnrealEditor\Development\GameMechanics\Default.rc2.res"
+/OUT:"Z:\jlawf\Documents\GitHub repos\Unreal-Projects-Backups\GameMechanics\Intermediate\Build\Win64\UnrealEditor\Development\GameMechanics\UnrealEditor-GameMechanics.lib"
