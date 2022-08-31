@@ -37,6 +37,18 @@ FHitResult AFPSCharacter::instantShot()
 	}
 
 	/** Set up ray collision parameters here. You're  ill right now, so come back when you're feeling better!*/
+
+	/** Creating params for the raycast. 
+	* Parameters = name of raycast, true - cast against the mesh of an object (useful if we're blowing limbs off a 
+	* character. If this were false, it would cast against an object's collider) and we're getting the instigator of the shot, aka the player as an object to ignore so 
+	* the player doesn't block the shot */
+	FCollisionQueryParams traceParams(SCENE_QUERY_STAT(instantShot), true, GetInstigator());
+	
+	
+	FHitResult hit(ForceInit);
+	
+	GetWorld()->LineTraceSingleByChannel(hit, rayLocation, endTrace, ECC_Visibility, traceParams);
+	
 	return FHitResult();
 }
 
