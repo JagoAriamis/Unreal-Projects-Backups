@@ -18,7 +18,11 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Weapon")
 		float weaponRange{ 1000 }; // These curly braces are one way of initialising a variable in C++
 
-protected: /** Protected means any subclasses made off of this parent class will be able to access these protected functions */
+	UFUNCTION(BlueprintCallable, Category = "Weapon")
+		void FireWeapon();
+
+/** Protected means any subclasses made off of this parent class will be able to access these protected functions */
+protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	FHitResult instantShot();

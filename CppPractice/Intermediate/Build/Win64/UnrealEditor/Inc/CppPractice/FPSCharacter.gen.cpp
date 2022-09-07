@@ -14,8 +14,45 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	UPackage* Z_Construct_UPackage__Script_CppPractice();
 // End Cross Module References
+	DEFINE_FUNCTION(AFPSCharacter::execFireWeapon)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->FireWeapon();
+		P_NATIVE_END;
+	}
 	void AFPSCharacter::StaticRegisterNativesAFPSCharacter()
 	{
+		UClass* Class = AFPSCharacter::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "FireWeapon", &AFPSCharacter::execFireWeapon },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AFPSCharacter_FireWeapon_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFPSCharacter_FireWeapon_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Weapon" },
+		{ "Comment", "// These curly braces are one way of initialising a variable in C++\n" },
+		{ "ModuleRelativePath", "FPSCharacter.h" },
+		{ "ToolTip", "These curly braces are one way of initialising a variable in C++" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AFPSCharacter_FireWeapon_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFPSCharacter, nullptr, "FireWeapon", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFPSCharacter_FireWeapon_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AFPSCharacter_FireWeapon_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFPSCharacter_FireWeapon()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AFPSCharacter_FireWeapon_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(AFPSCharacter);
 	UClass* Z_Construct_UClass_AFPSCharacter_NoRegister()
@@ -25,6 +62,7 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 	struct Z_Construct_UClass_AFPSCharacter_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -39,6 +77,9 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 	UObject* (*const Z_Construct_UClass_AFPSCharacter_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_ACharacter,
 		(UObject* (*)())Z_Construct_UPackage__Script_CppPractice,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_AFPSCharacter_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AFPSCharacter_FireWeapon, "FireWeapon" }, // 293949847
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFPSCharacter_Statics::Class_MetaDataParams[] = {
@@ -65,11 +106,11 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 		"Game",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_AFPSCharacter_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_AFPSCharacter_Statics::PropPointers),
 		0,
 		0x009000A4u,
@@ -93,9 +134,9 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CppPractice_Source_CppPractice_FPSCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AFPSCharacter, AFPSCharacter::StaticClass, TEXT("AFPSCharacter"), &Z_Registration_Info_UClass_AFPSCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFPSCharacter), 615862709U) },
+		{ Z_Construct_UClass_AFPSCharacter, AFPSCharacter::StaticClass, TEXT("AFPSCharacter"), &Z_Registration_Info_UClass_AFPSCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFPSCharacter), 45547502U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CppPractice_Source_CppPractice_FPSCharacter_h_85259479(TEXT("/Script/CppPractice"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CppPractice_Source_CppPractice_FPSCharacter_h_837029004(TEXT("/Script/CppPractice"),
 		Z_CompiledInDeferFile_FID_CppPractice_Source_CppPractice_FPSCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_CppPractice_Source_CppPractice_FPSCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

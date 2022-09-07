@@ -41,6 +41,12 @@
     <ClInclude Include="..\..\Source\CppPractice\CppPracticeGameModeBase.h">
       <Filter>Source\CppPractice</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\CppPractice\DamageableActor.cpp">
+      <Filter>Source\CppPractice</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CppPractice\DamageableActor.h">
+      <Filter>Source\CppPractice</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\CppPractice\FPSCharacter.cpp">
       <Filter>Source\CppPractice</Filter>
     </ClCompile>
