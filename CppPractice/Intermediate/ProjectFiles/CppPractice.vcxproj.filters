@@ -23,6 +23,15 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Config\HoloLens">
+      <UniqueIdentifier>{4C8DD267-CDE7-336F-8602-F5F485D22BAB}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\HoloLens\HoloLensEngine.ini">
+      <Filter>Config\HoloLens</Filter>
+    </None>
     <Filter Include="Source\CppPractice">
       <UniqueIdentifier>{6DF15A0A-0DC2-374C-AFA5-D298EDCD2C9B}</UniqueIdentifier>
     </Filter>
@@ -51,6 +60,12 @@
       <Filter>Source\CppPractice</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\CppPractice\FPSCharacter.h">
+      <Filter>Source\CppPractice</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CppPractice\My_Cpp_Actor.cpp">
+      <Filter>Source\CppPractice</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CppPractice\My_Cpp_Actor.h">
       <Filter>Source\CppPractice</Filter>
     </ClInclude>
   </ItemGroup>
