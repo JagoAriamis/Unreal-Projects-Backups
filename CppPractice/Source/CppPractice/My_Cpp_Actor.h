@@ -28,12 +28,15 @@ public:
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Transient, Category = "Damage")
 		float DamagePerSecond;
 
+	UFUNCTION(BlueprintCallable, Category = "Damage")
+		void CalculateValues();
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
 	virtual void PostInitProperties();
-	void CalculateValues();
+	
 
 #if WITH_EDITOR
 	virtual void PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent) override;
