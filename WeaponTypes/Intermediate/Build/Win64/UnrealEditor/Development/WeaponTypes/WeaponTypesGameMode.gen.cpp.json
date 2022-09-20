@@ -1,0 +1,19 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\weapontypes\\intermediate\\build\\win64\\unrealeditor\\inc\\weapontypes\\weapontypesgamemode.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\weapontypes\\intermediate\\build\\win64\\weapontypeseditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\weapontypes\\intermediate\\build\\win64\\unrealeditor\\development\\weapontypes\\definitions.weapontypes.h",
+            "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\weapontypes\\source\\weapontypes\\weapontypesgamemode.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\serverstatreplicator.generated.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\gamemodebase.generated.h",
+            "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\weapontypes\\intermediate\\build\\win64\\unrealeditor\\inc\\weapontypes\\weapontypesgamemode.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

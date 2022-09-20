@@ -14,6 +14,13 @@ void EmptyLinkFunctionForGeneratedCodeMy_Cpp_Actor() {}
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_CppPractice();
 // End Cross Module References
+	DEFINE_FUNCTION(AMy_Cpp_Actor::execCalculateMovement)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->CalculateMovement();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AMy_Cpp_Actor::execCalculateValues)
 	{
 		P_FINISH;
@@ -25,9 +32,33 @@ void EmptyLinkFunctionForGeneratedCodeMy_Cpp_Actor() {}
 	{
 		UClass* Class = AMy_Cpp_Actor::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "CalculateMovement", &AMy_Cpp_Actor::execCalculateMovement },
 			{ "CalculateValues", &AMy_Cpp_Actor::execCalculateValues },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AMy_Cpp_Actor_CalculateMovement_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMy_Cpp_Actor_CalculateMovement_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Transformation" },
+		{ "ModuleRelativePath", "My_Cpp_Actor.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMy_Cpp_Actor_CalculateMovement_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMy_Cpp_Actor, nullptr, "CalculateMovement", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMy_Cpp_Actor_CalculateMovement_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMy_Cpp_Actor_CalculateMovement_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AMy_Cpp_Actor_CalculateMovement()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AMy_Cpp_Actor_CalculateMovement_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_AMy_Cpp_Actor_CalculateValues_Statics
 	{
@@ -76,6 +107,14 @@ void EmptyLinkFunctionForGeneratedCodeMy_Cpp_Actor() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_DamagePerSecond_MetaData[];
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_DamagePerSecond;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_rotationAmount_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_rotationAmount;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_zAxisMovement_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_zAxisMovement;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -85,6 +124,7 @@ void EmptyLinkFunctionForGeneratedCodeMy_Cpp_Actor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_CppPractice,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AMy_Cpp_Actor_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AMy_Cpp_Actor_CalculateMovement, "CalculateMovement" }, // 196077636
 		{ &Z_Construct_UFunction_AMy_Cpp_Actor_CalculateValues, "CalculateValues" }, // 92138736
 	};
 #if WITH_METADATA
@@ -120,10 +160,26 @@ void EmptyLinkFunctionForGeneratedCodeMy_Cpp_Actor() {}
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMy_Cpp_Actor_Statics::NewProp_DamagePerSecond = { "DamagePerSecond", nullptr, (EPropertyFlags)0x0010000000022015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMy_Cpp_Actor, DamagePerSecond), METADATA_PARAMS(Z_Construct_UClass_AMy_Cpp_Actor_Statics::NewProp_DamagePerSecond_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMy_Cpp_Actor_Statics::NewProp_DamagePerSecond_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMy_Cpp_Actor_Statics::NewProp_rotationAmount_MetaData[] = {
+		{ "Category", "Transformation" },
+		{ "ModuleRelativePath", "My_Cpp_Actor.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMy_Cpp_Actor_Statics::NewProp_rotationAmount = { "rotationAmount", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMy_Cpp_Actor, rotationAmount), METADATA_PARAMS(Z_Construct_UClass_AMy_Cpp_Actor_Statics::NewProp_rotationAmount_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMy_Cpp_Actor_Statics::NewProp_rotationAmount_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMy_Cpp_Actor_Statics::NewProp_zAxisMovement_MetaData[] = {
+		{ "Category", "Transformation" },
+		{ "ModuleRelativePath", "My_Cpp_Actor.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMy_Cpp_Actor_Statics::NewProp_zAxisMovement = { "zAxisMovement", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMy_Cpp_Actor, zAxisMovement), METADATA_PARAMS(Z_Construct_UClass_AMy_Cpp_Actor_Statics::NewProp_zAxisMovement_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMy_Cpp_Actor_Statics::NewProp_zAxisMovement_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMy_Cpp_Actor_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMy_Cpp_Actor_Statics::NewProp_TotalDamage,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMy_Cpp_Actor_Statics::NewProp_DamageTimeInSeconds,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMy_Cpp_Actor_Statics::NewProp_DamagePerSecond,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMy_Cpp_Actor_Statics::NewProp_rotationAmount,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMy_Cpp_Actor_Statics::NewProp_zAxisMovement,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AMy_Cpp_Actor_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AMy_Cpp_Actor>::IsAbstract,
@@ -161,9 +217,9 @@ void EmptyLinkFunctionForGeneratedCodeMy_Cpp_Actor() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CppPractice_Source_CppPractice_My_Cpp_Actor_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AMy_Cpp_Actor, AMy_Cpp_Actor::StaticClass, TEXT("AMy_Cpp_Actor"), &Z_Registration_Info_UClass_AMy_Cpp_Actor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMy_Cpp_Actor), 159784894U) },
+		{ Z_Construct_UClass_AMy_Cpp_Actor, AMy_Cpp_Actor::StaticClass, TEXT("AMy_Cpp_Actor"), &Z_Registration_Info_UClass_AMy_Cpp_Actor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMy_Cpp_Actor), 2668641703U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CppPractice_Source_CppPractice_My_Cpp_Actor_h_2493290633(TEXT("/Script/CppPractice"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CppPractice_Source_CppPractice_My_Cpp_Actor_h_3325960662(TEXT("/Script/CppPractice"),
 		Z_CompiledInDeferFile_FID_CppPractice_Source_CppPractice_My_Cpp_Actor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_CppPractice_Source_CppPractice_My_Cpp_Actor_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

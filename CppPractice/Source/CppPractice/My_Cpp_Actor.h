@@ -28,8 +28,11 @@ public:
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Transient, Category = "Damage")
 		float DamagePerSecond;
 
-	UFUNCTION(BlueprintCallable, Category = "Damage")
-		void CalculateValues();
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Transformation")
+		float rotationAmount{ 20.0 };
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Transformation")
+		float zAxisMovement{ 20.0 };
 
 protected:
 	// Called when the game starts or when spawned
@@ -46,5 +49,11 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	UFUNCTION(BlueprintCallable, Category = "Damage")
+		void CalculateValues();
+
+	UFUNCTION(BlueprintCallable, Category = "Transformation")
+		void CalculateMovement();
 
 };

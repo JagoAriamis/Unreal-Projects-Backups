@@ -18,6 +18,9 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Weapon")
 		float weaponRange{ 1000 }; // These curly braces are one way of initialising a variable in C++
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+		float moveSpeed{ 20 };
+
 	UFUNCTION(BlueprintCallable, Category = "Weapon")
 		void FireWeapon();
 

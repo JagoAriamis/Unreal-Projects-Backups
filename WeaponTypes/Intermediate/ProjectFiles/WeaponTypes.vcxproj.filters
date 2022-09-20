@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\WeaponTypes.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\WeaponTypes.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\WeaponTypesEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\WeaponTypes">
+      <UniqueIdentifier>{9B042237-C5BD-3B2A-9745-15B667A33631}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\WeaponTypes\TP_PickUpComponent.cpp">
+      <Filter>Source\WeaponTypes</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\WeaponTypes\TP_PickUpComponent.h">
+      <Filter>Source\WeaponTypes</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\WeaponTypes\TP_WeaponComponent.cpp">
+      <Filter>Source\WeaponTypes</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\WeaponTypes\TP_WeaponComponent.h">
+      <Filter>Source\WeaponTypes</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\WeaponTypes\WeaponTypes.Build.cs">
+      <Filter>Source\WeaponTypes</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\WeaponTypes\WeaponTypes.cpp">
+      <Filter>Source\WeaponTypes</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\WeaponTypes\WeaponTypes.h">
+      <Filter>Source\WeaponTypes</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\WeaponTypes\WeaponTypesCharacter.cpp">
+      <Filter>Source\WeaponTypes</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\WeaponTypes\WeaponTypesCharacter.h">
+      <Filter>Source\WeaponTypes</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\WeaponTypes\WeaponTypesGameMode.cpp">
+      <Filter>Source\WeaponTypes</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\WeaponTypes\WeaponTypesGameMode.h">
+      <Filter>Source\WeaponTypes</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\WeaponTypes\WeaponTypesProjectile.cpp">
+      <Filter>Source\WeaponTypes</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\WeaponTypes\WeaponTypesProjectile.h">
+      <Filter>Source\WeaponTypes</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

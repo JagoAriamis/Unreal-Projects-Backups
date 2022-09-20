@@ -39,9 +39,7 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFPSCharacter_FireWeapon_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Weapon" },
-		{ "Comment", "// These curly braces are one way of initialising a variable in C++\n" },
 		{ "ModuleRelativePath", "FPSCharacter.h" },
-		{ "ToolTip", "These curly braces are one way of initialising a variable in C++" },
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AFPSCharacter_FireWeapon_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFPSCharacter, nullptr, "FireWeapon", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFPSCharacter_FireWeapon_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AFPSCharacter_FireWeapon_Statics::Function_MetaDataParams)) };
@@ -70,6 +68,10 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_weaponRange_MetaData[];
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_weaponRange;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_moveSpeed_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_moveSpeed;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -79,7 +81,7 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_CppPractice,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFPSCharacter_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFPSCharacter_FireWeapon, "FireWeapon" }, // 293949847
+		{ &Z_Construct_UFunction_AFPSCharacter_FireWeapon, "FireWeapon" }, // 1941591588
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFPSCharacter_Statics::Class_MetaDataParams[] = {
@@ -95,8 +97,18 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFPSCharacter_Statics::NewProp_weaponRange = { "weaponRange", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFPSCharacter, weaponRange), METADATA_PARAMS(Z_Construct_UClass_AFPSCharacter_Statics::NewProp_weaponRange_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFPSCharacter_Statics::NewProp_weaponRange_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFPSCharacter_Statics::NewProp_moveSpeed_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "Comment", "// These curly braces are one way of initialising a variable in C++\n" },
+		{ "ModuleRelativePath", "FPSCharacter.h" },
+		{ "ToolTip", "These curly braces are one way of initialising a variable in C++" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFPSCharacter_Statics::NewProp_moveSpeed = { "moveSpeed", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFPSCharacter, moveSpeed), METADATA_PARAMS(Z_Construct_UClass_AFPSCharacter_Statics::NewProp_moveSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFPSCharacter_Statics::NewProp_moveSpeed_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFPSCharacter_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPSCharacter_Statics::NewProp_weaponRange,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPSCharacter_Statics::NewProp_moveSpeed,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFPSCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AFPSCharacter>::IsAbstract,
@@ -134,9 +146,9 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CppPractice_Source_CppPractice_FPSCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AFPSCharacter, AFPSCharacter::StaticClass, TEXT("AFPSCharacter"), &Z_Registration_Info_UClass_AFPSCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFPSCharacter), 45547502U) },
+		{ Z_Construct_UClass_AFPSCharacter, AFPSCharacter::StaticClass, TEXT("AFPSCharacter"), &Z_Registration_Info_UClass_AFPSCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFPSCharacter), 489437527U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CppPractice_Source_CppPractice_FPSCharacter_h_837029004(TEXT("/Script/CppPractice"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CppPractice_Source_CppPractice_FPSCharacter_h_3933952119(TEXT("/Script/CppPractice"),
 		Z_CompiledInDeferFile_FID_CppPractice_Source_CppPractice_FPSCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_CppPractice_Source_CppPractice_FPSCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

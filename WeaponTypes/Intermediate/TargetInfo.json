@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "WeaponTypes",
+			"Path": "Z:\\jlawf\\Documents\\GitHub repos\\Unreal-Projects-Backups\\WeaponTypes\\Source\\WeaponTypes.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "WeaponTypesEditor",
+			"Path": "Z:\\jlawf\\Documents\\GitHub repos\\Unreal-Projects-Backups\\WeaponTypes\\Source\\WeaponTypesEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

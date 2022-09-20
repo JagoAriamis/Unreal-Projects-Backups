@@ -31,6 +31,23 @@ void AMy_Cpp_Actor::CalculateValues()
 	DamagePerSecond = TotalDamage / DamageTimeInSeconds;
 }
 
+void AMy_Cpp_Actor::CalculateMovement()
+{
+	FVector newLocation = GetActorLocation();
+	FRotator newRotation = GetActorRotation();
+
+	float runningTime = GetGameTimeSinceCreation();
+	float deltaTime = FApp::GetDeltaTime();
+	
+	float height = (FMath::Sin(runningTime + deltaTime) - FMath::Sin(runningTime));
+	float rotation = deltaTime * rotationAmount;
+
+	newLocation.Z += height * zAxisMovement;
+	newRotation.Yaw += rotation;
+
+	SetActorLocationAndRotation(newLocation, newRotation);
+}
+
 /* This #ifdef is editor-specific. What this does is that building the game only compiles the code that is needed, removing unnecessary increase of executable size */
 #if WITH_EDITOR
 void AMy_Cpp_Actor::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent)
@@ -44,7 +61,6 @@ void AMy_Cpp_Actor::PostEditChangeProperty(FPropertyChangedEvent& PropertyChange
 void AMy_Cpp_Actor::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 }
 
 

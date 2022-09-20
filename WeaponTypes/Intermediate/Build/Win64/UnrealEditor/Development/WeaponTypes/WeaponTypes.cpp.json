@@ -1,0 +1,14 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\weapontypes\\source\\weapontypes\\weapontypes.cpp",
+        "ProvidedModule": "",
+        "PCH": "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\weapontypes\\intermediate\\build\\win64\\weapontypeseditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\weapontypes\\intermediate\\build\\win64\\unrealeditor\\development\\weapontypes\\definitions.weapontypes.h",
+            "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\weapontypes\\source\\weapontypes\\weapontypes.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

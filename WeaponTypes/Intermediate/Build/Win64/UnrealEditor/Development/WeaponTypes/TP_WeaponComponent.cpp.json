@@ -1,0 +1,34 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\weapontypes\\source\\weapontypes\\tp_weaponcomponent.cpp",
+        "ProvidedModule": "",
+        "PCH": "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\weapontypes\\intermediate\\build\\win64\\weapontypeseditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\weapontypes\\intermediate\\build\\win64\\unrealeditor\\development\\weapontypes\\definitions.weapontypes.h",
+            "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\weapontypes\\source\\weapontypes\\tp_weaponcomponent.h",
+            "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\weapontypes\\intermediate\\build\\win64\\unrealeditor\\inc\\weapontypes\\tp_weaponcomponent.generated.h",
+            "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\weapontypes\\source\\weapontypes\\weapontypescharacter.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\charactermovementreplication.generated.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\rootmotionsource.generated.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\character.generated.h",
+            "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\weapontypes\\intermediate\\build\\win64\\unrealeditor\\inc\\weapontypes\\weapontypescharacter.generated.h",
+            "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\weapontypes\\source\\weapontypes\\weapontypesprojectile.h",
+            "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\weapontypes\\intermediate\\build\\win64\\unrealeditor\\inc\\weapontypes\\weapontypesprojectile.generated.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\kismet\\gameplaystatics.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetsystemlibrary.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\source\\runtime\\coreuobject\\public\\uobject\\propertyaccessutil.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\kismetsystemlibrary.generated.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\sound\\dialoguetypes.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\dialoguetypes.generated.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\kismet\\gameplaystaticstypes.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\gameplaystaticstypes.generated.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\gameplaystatics.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

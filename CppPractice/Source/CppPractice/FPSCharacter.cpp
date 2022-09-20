@@ -3,6 +3,7 @@
 
 #include "FPSCharacter.h"
 #include "DamageableActor.h"
+#include "DrawDebugHelpers.h"
 
 // Sets default values
 AFPSCharacter::AFPSCharacter()
@@ -73,6 +74,11 @@ FHitResult AFPSCharacter::instantShot()
 	LineTraceSingleByChannel is a single channel raycast, used to trace against a specific channel and return the first blocking hit */
 	GetWorld()->LineTraceSingleByChannel(hit, rayLocation, endTrace, ECC_Visibility, traceParams);
 	
+	if (playerController->IsInputKeyDown(EKeys::LeftMouseButton))
+	{
+		DrawDebugLine(GetWorld(), rayLocation, endTrace, FColor(255, 0, 0), false, 5.0f, 0.0f, 10.0f);
+	}
+	
 	return hit;
 }
 
@@ -80,13 +86,11 @@ FHitResult AFPSCharacter::instantShot()
 void AFPSCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 }
 
 // Called to bind functionality to input
 void AFPSCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
-
 }
 

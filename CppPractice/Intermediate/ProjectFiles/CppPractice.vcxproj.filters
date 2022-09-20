@@ -56,6 +56,12 @@
     <ClInclude Include="..\..\Source\CppPractice\DamageableActor.h">
       <Filter>Source\CppPractice</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\CppPractice\FieldOfView.cpp">
+      <Filter>Source\CppPractice</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CppPractice\FieldOfView.h">
+      <Filter>Source\CppPractice</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\CppPractice\FPSCharacter.cpp">
       <Filter>Source\CppPractice</Filter>
     </ClCompile>
@@ -66,6 +72,12 @@
       <Filter>Source\CppPractice</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\CppPractice\My_Cpp_Actor.h">
+      <Filter>Source\CppPractice</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CppPractice\My_Cpp_Test_Actor.cpp">
+      <Filter>Source\CppPractice</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CppPractice\My_Cpp_Test_Actor.h">
       <Filter>Source\CppPractice</Filter>
     </ClInclude>
   </ItemGroup>
