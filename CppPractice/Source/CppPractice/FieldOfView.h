@@ -22,6 +22,8 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "FieldOfView")
 		float viewRadius;
 
+	UPROPERTY(EditAnywhere, Category = "FieldOfView")
+		TArray<AActor*> targetsList;
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;

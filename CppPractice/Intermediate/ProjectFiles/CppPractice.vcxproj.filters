@@ -74,10 +74,10 @@
     <ClInclude Include="..\..\Source\CppPractice\My_Cpp_Actor.h">
       <Filter>Source\CppPractice</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\CppPractice\My_Cpp_Test_Actor.cpp">
+    <ClCompile Include="..\..\Source\CppPractice\Third_Person_Character.cpp">
       <Filter>Source\CppPractice</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\CppPractice\My_Cpp_Test_Actor.h">
+    <ClInclude Include="..\..\Source\CppPractice\Third_Person_Character.h">
       <Filter>Source\CppPractice</Filter>
     </ClInclude>
   </ItemGroup>

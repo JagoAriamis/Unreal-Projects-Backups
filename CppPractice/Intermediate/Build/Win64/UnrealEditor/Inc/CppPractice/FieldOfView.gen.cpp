@@ -13,6 +13,7 @@ void EmptyLinkFunctionForGeneratedCodeFieldOfView() {}
 	CPPPRACTICE_API UClass* Z_Construct_UClass_UFieldOfView();
 	ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
 	UPackage* Z_Construct_UPackage__Script_CppPractice();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(UFieldOfView::execFindTargets)
 	{
@@ -72,6 +73,11 @@ void EmptyLinkFunctionForGeneratedCodeFieldOfView() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_viewRadius_MetaData[];
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_viewRadius;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_targetsList_Inner;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_targetsList_MetaData[];
+#endif
+		static const UECodeGen_Private::FArrayPropertyParams NewProp_targetsList;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -105,9 +111,19 @@ void EmptyLinkFunctionForGeneratedCodeFieldOfView() {}
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UFieldOfView_Statics::NewProp_viewRadius = { "viewRadius", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFieldOfView, viewRadius), METADATA_PARAMS(Z_Construct_UClass_UFieldOfView_Statics::NewProp_viewRadius_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UFieldOfView_Statics::NewProp_viewRadius_MetaData)) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFieldOfView_Statics::NewProp_targetsList_Inner = { "targetsList", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFieldOfView_Statics::NewProp_targetsList_MetaData[] = {
+		{ "Category", "FieldOfView" },
+		{ "ModuleRelativePath", "FieldOfView.h" },
+	};
+#endif
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFieldOfView_Statics::NewProp_targetsList = { "targetsList", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFieldOfView, targetsList), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_UFieldOfView_Statics::NewProp_targetsList_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UFieldOfView_Statics::NewProp_targetsList_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFieldOfView_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFieldOfView_Statics::NewProp_viewAngle,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFieldOfView_Statics::NewProp_viewRadius,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFieldOfView_Statics::NewProp_targetsList_Inner,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFieldOfView_Statics::NewProp_targetsList,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UFieldOfView_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UFieldOfView>::IsAbstract,
@@ -145,9 +161,9 @@ void EmptyLinkFunctionForGeneratedCodeFieldOfView() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CppPractice_Source_CppPractice_FieldOfView_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UFieldOfView, UFieldOfView::StaticClass, TEXT("UFieldOfView"), &Z_Registration_Info_UClass_UFieldOfView, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UFieldOfView), 83760894U) },
+		{ Z_Construct_UClass_UFieldOfView, UFieldOfView::StaticClass, TEXT("UFieldOfView"), &Z_Registration_Info_UClass_UFieldOfView, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UFieldOfView), 3013723217U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CppPractice_Source_CppPractice_FieldOfView_h_2090652515(TEXT("/Script/CppPractice"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CppPractice_Source_CppPractice_FieldOfView_h_4076546975(TEXT("/Script/CppPractice"),
 		Z_CompiledInDeferFile_FID_CppPractice_Source_CppPractice_FieldOfView_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_CppPractice_Source_CppPractice_FieldOfView_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

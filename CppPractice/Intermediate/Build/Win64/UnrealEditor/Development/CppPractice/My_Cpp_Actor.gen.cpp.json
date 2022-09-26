@@ -1,0 +1,15 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\cpppractice\\intermediate\\build\\win64\\unrealeditor\\inc\\cpppractice\\my_cpp_actor.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\cpppractice\\intermediate\\build\\win64\\cpppracticeeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\cpppractice\\intermediate\\build\\win64\\unrealeditor\\development\\cpppractice\\definitions.cpppractice.h",
+            "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\cpppractice\\source\\cpppractice\\my_cpp_actor.h",
+            "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\cpppractice\\intermediate\\build\\win64\\unrealeditor\\inc\\cpppractice\\my_cpp_actor.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

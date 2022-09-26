@@ -1,0 +1,23 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\cpppractice\\source\\cpppractice\\fpscharacter.cpp",
+        "ProvidedModule": "",
+        "PCH": "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\cpppractice\\intermediate\\build\\win64\\cpppracticeeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\cpppractice\\intermediate\\build\\win64\\unrealeditor\\development\\cpppractice\\definitions.cpppractice.h",
+            "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\cpppractice\\source\\cpppractice\\fpscharacter.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\charactermovementreplication.generated.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\rootmotionsource.generated.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\character.generated.h",
+            "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\cpppractice\\intermediate\\build\\win64\\unrealeditor\\inc\\cpppractice\\fpscharacter.generated.h",
+            "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\cpppractice\\source\\cpppractice\\damageableactor.h",
+            "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\cpppractice\\intermediate\\build\\win64\\unrealeditor\\inc\\cpppractice\\damageableactor.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

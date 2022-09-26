@@ -4,6 +4,7 @@
 #include "FieldOfView.h"
 #include "Kismet/KismetSystemLibrary.h"
 #include "GameFramework/Actor.h"
+#include "Math/UnrealMathUtility.h"
 
 // Sets default values for this component's properties
 UFieldOfView::UFieldOfView()
@@ -12,7 +13,7 @@ UFieldOfView::UFieldOfView()
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
 
-	FMath::Clamp(viewAngle, 0, 360);
+	viewAngle = FMath::Clamp(viewAngle, 0.0f, 360.0f);
 	viewRadius = 100.0f;
 }
 
@@ -44,21 +45,19 @@ void UFieldOfView::FindTargets()
 	TArray<TEnumAsByte<EObjectTypeQuery>> traceObjectTypes;
 	traceObjectTypes.Add(UEngineTypes::ConvertToObjectType(ECollisionChannel::ECC_EngineTraceChannel1));
 
-	TArray<AActor*> targetsList;
-
 	targetsList.Empty();
 
 	UKismetSystemLibrary::SphereOverlapActors(GetWorld(), parent->GetActorLocation(), viewRadius, traceObjectTypes, nullptr, targetsToIgnore, targetsList);
 
 	for (int i = 0; i < targetsList.Num(); i++)
 	{
-		FVector target = targetsList[i]->GetActorLocation();
-		FVector directionToTarget = (target - parent->GetActorLocation());
+		AActor* target = targetsList[i];
+		FVector directionToTarget = (target->GetActorLocation() - parent->GetActorLocation());
 		directionToTarget.Normalize();
 
 		if (FVector::DotProduct(parent->GetActorLocation(), directionToTarget) < viewAngle / 2)
 		{
-			// This is going to work very differently in Unreal...
+			targetsList.Add(target);
 		}
 	}
 }

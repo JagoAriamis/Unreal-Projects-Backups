@@ -1,0 +1,18 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\cpppractice\\source\\cpppractice\\fieldofview.cpp",
+        "ProvidedModule": "",
+        "PCH": "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\cpppractice\\intermediate\\build\\win64\\cpppracticeeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\cpppractice\\intermediate\\build\\win64\\unrealeditor\\development\\cpppractice\\definitions.cpppractice.h",
+            "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\cpppractice\\source\\cpppractice\\fieldofview.h",
+            "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\cpppractice\\intermediate\\build\\win64\\unrealeditor\\inc\\cpppractice\\fieldofview.generated.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetsystemlibrary.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\source\\runtime\\coreuobject\\public\\uobject\\propertyaccessutil.h",
+            "s:\\unreal engine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\kismetsystemlibrary.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
