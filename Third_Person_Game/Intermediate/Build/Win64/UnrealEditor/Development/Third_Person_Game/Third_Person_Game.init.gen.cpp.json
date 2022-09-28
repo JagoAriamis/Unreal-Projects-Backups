@@ -1,0 +1,13 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\third_person_game\\intermediate\\build\\win64\\unrealeditor\\inc\\third_person_game\\third_person_game.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\third_person_game\\intermediate\\build\\win64\\third_person_gameeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "z:\\jlawf\\documents\\github repos\\unreal-projects-backups\\third_person_game\\intermediate\\build\\win64\\unrealeditor\\development\\third_person_game\\definitions.third_person_game.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

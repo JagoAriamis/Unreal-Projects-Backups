@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Third_Person_Game",
+			"Path": "Z:\\jlawf\\Documents\\GitHub repos\\Unreal-Projects-Backups\\Third_Person_Game\\Source\\Third_Person_Game.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "Third_Person_GameEditor",
+			"Path": "Z:\\jlawf\\Documents\\GitHub repos\\Unreal-Projects-Backups\\Third_Person_Game\\Source\\Third_Person_GameEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
